@@ -35,4 +35,5 @@ int main()
     cout << filesize1<<" "<<filesize2;
     fclose(F1);
     fclose(F2);
+    return 0;
 }
