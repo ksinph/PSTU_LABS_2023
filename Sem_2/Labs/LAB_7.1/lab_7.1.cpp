@@ -6,9 +6,11 @@ int sum(int c, int w) { return c + w; }
 int main()
 {
     int c, w;
+    double a1, a2;
     cin >> c;
     cin >> w;
-    double a1 = 10.20; double a2 = 10.23;
+    cin >> a1;
+    cin >> a2;
     complex<double> a(a1, a2);
     complex<double> b(a2, a1);
     cout << sum(c, w);
