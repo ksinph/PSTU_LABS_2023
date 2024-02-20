@@ -4,7 +4,6 @@ int main()
 {
     int n, tmp;
     cin >> n;
-    int arr[4] = { 41,42,66,77 };
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
