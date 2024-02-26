@@ -29,10 +29,13 @@ int main()
 # Блок-схема программы
 ## Функция main
 <image src="lab_7.1.drawio.png">
+    
 ## Функция complex sum
 <image src="lab_7.1_func.drawio.png">
+    
 ## Функция int sum
 <image src="lab_7.1_int.drawio.png">
+    
 # Тесты
 ### Пример 1
 Входные данные:
