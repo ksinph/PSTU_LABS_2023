@@ -1,69 +1,102 @@
 # Вариант задания
 Лабораторная работа №6, вариант 1.
-Проверить является ли строка палиндромом. (Палиндром -
-это выражение, которое читается одинаково слева направо
-и справа налево).
+ В двумерном массиве записаны слова, представляющие
+собой последовательность цифр, завершающихся 0.
+Необходимо распечатать слова через запятую, заключив
+печатную строку в скобки. Длина печатной строки 60
+символов. Извлечение слова оформить в виде функции.
+ Например:
+ исходные данные - 123023402303450
+ 234450234567010
+234455677670450
+31
+ результат - (123,234,23,345)(23445,234567,1)
+(23445567767,45)
+
 # Код программы
 ```cpp
 #include <iostream>
-#include <cstring>
+#include <ctime>
 using namespace std;
-bool gets(string s)
+int** createArr(int height, int width) 
 {
-    int len =s.length();
-    for (int i = 0; i < len / 2; i++)
-    {
-        if (s[i] != s[len - i - 1])
-        {
-            return false;
-        }
-    }
-    return true;
+    int** seq = new int* [height];
+    for (int l = 0; l < height; l++)
+        seq[l] = new int[width];
+    return seq;
 }
-int main()
+
+int** fillArr(int** seq, int height, int width) 
 {
+    srand(time(NULL));
+    for (int i = 0; i < height; i++)
+        for (int j = 0; j < width; j++)
+            seq[i][j] = rand() % 10;
+    return seq;
+}
+
+void getWord(int** a, int height, int width) {
+    cout << endl << "(";
+    for (int i = 0; i < height; i++)
+        for (int j = 0; j < width; j++)
+            if (a[i][j] == 0)
+                cout << ", ";
+            else
+                cout << a[i][j];
+    cout << ")" << endl;
+}
+
+void main() {
     setlocale(LC_ALL, "Russian");
-    string str;
-    char s[255];
-    cin >> s;
-    if(gets(s))
-    {
-        cout << " является палиндромом";
-    }
-    else
-    {
-        cout << " не является палиндромом";
-    }
+    int i, j, l, height, width;
+    cout << "Введите высоту массива: \n";
+    cin >> height;
+    cout << "Введите ширину массива: \n";
+    cin >> width;
+    width++;
+    int** seq;
+    seq = fillArr(createArr(height, width), height, width);
+    getWord(seq, height, width);
+    system("pause");
 }
 ```
 # Блок-схема программы
-<image src="lab_4.drawio.png">
+<image src="lab_5.drawio.png">
 	
 # Тесты
 ### Пример 1
 Входные данные:
 ```
-polop
+Введите высоту массива:
+3
+Введите ширину массива:
+15
 ```
 Выходные данные:
 ```
- является полиндромом
+ (694858427721, 8641, 9, 466, 7673287, 7569, 82163461653)
 ```
 ### Пример 2
 Входные данные:
 ```
-polindrom
+Введите высоту массива:
+3
+Введите ширину массива:
+15
 ```
 Выходные данные:
 ```
- не является полиндромом
+(33947172981985525818681574, 424, 312138737, , 555256)
 ```
 ### Пример 3
 Входные данные:
 ```
-11111
+Введите высоту массива:
+3
+Введите ширину массива:
+15
 ```
 Выходные данные:
 ```
- является полиндромом
+(975, 99434, 7225495, , 47367, 315829632, 41, 2384447777)
 ```
