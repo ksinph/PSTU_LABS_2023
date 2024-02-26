@@ -57,7 +57,6 @@ void main() {
     int** seq;
     seq = fillArr(createArr(height, width), height, width);
     getWord(seq, height, width);
-    system("pause");
 }
 ```
 # Блок-схема программы
