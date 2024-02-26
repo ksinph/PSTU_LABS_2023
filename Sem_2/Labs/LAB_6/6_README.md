@@ -37,8 +37,10 @@ int main()
 }
 ```
 # Блок-схема программы
-<image src="lab_4.drawio.png">
-	
+## Функция main
+<image src="lab_6.drawio.png">
+## Функция gets
+<image src="lab_6_func.drawio.png">	
 # Тесты
 ### Пример 1
 Входные данные:
