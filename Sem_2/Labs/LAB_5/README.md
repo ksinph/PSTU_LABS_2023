@@ -60,8 +60,18 @@ void main() {
 }
 ```
 # Блок-схема программы
+## Функция main
 <image src="lab_5.drawio.png">
-	
+
+ ## Функция createArr
+ <image src="lab_5_createArr.drawio.png">
+	 
+ ## Функция fillArr
+ <image src="lab_5_fillArr.drawio.png">
+
+  ## Функция getWord
+ <image src="lab_5_getWord.drawio.png">
+	 
 # Тесты
 ### Пример 1
 Входные данные:
