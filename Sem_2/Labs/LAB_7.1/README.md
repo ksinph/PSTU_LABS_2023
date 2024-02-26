@@ -32,7 +32,7 @@ int main()
 ## Функция complex sum
 <image src="lab_7.1_func.drawio.png">
 ## Функция int sum
-<image src="lab_7.1_int.drawio.png">	
+<image src="lab_7.1_int.drawio.png">
 # Тесты
 ### Пример 1
 Входные данные:
