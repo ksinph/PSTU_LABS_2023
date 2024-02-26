@@ -15,4 +15,5 @@ int main()
     complex<double> b(a2, a1);
     cout << sum(c, w);
     cout << sum(a, b);
+    return 0;
 }
