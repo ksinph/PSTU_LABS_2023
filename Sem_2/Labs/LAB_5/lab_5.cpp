@@ -1,35 +1,44 @@
-﻿#include <iostream>
+#include <iostream>
+#include <ctime>
 using namespace std;
-/*
-        В двумерном массиве записаны слова, представляющие собой последовательность цифр, завершающихся 0.
-        Необходимо распечатать слова через запятую, заключив печатную строку в скобки.
-        Длина печатной строки 60 символов.Извлечение слова оформить в виде функции.
-*/
-void getWord(int height, int width,int* seq[]) {
-   
+int** createArr(int height, int width) 
+{
+    int** seq = new int* [height];
+    for (int l = 0; l < height; l++)
+        seq[l] = new int[width];
+    return seq;
+}
+
+int** fillArr(int** seq, int height, int width) 
+{
+    srand(time(NULL));
+    for (int i = 0; i < height; i++)
+        for (int j = 0; j < width; j++)
+            seq[i][j] = rand() % 10;
+    return seq;
+}
+
+void getWord(int** a, int height, int width) {
     cout << endl << "(";
     for (int i = 0; i < height; i++)
-    {
         for (int j = 0; j < width; j++)
-        {
-            if (seq[i][j] == 0)
-            {
-                cout << ",";
-            }
+            if (a[i][j] == 0)
+                cout << ", ";
             else
-            {
-                cout << seq[i][j];
-            }
-        }
-    }
+                cout << a[i][j];
     cout << ")" << endl;
 }
-int main() {
+
+void main() {
     setlocale(LC_ALL, "Russian");
-    const int height = 3;
-    const int width=4;
-    
-    int seq[height][width] = {{1230,2340,230,3450}, {234450,2345670,10}, {234455677670,450}};
-    getWord(height, width, seq[]);
-    return 0;
+    int i, j, l, height, width;
+    cout << "Введите высоту массива: \n";
+    cin >> height;
+    cout << "Введите ширину массива: \n";
+    cin >> width;
+    width++;
+    int** seq;
+    seq = fillArr(createArr(height, width), height, width);
+    getWord(seq, height, width);
+    system("pause");
 }
