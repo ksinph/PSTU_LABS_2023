@@ -38,7 +38,7 @@ int main()
 ```
 # Блок-схема программы
 ## Функция main
-<image src="lab_6.drawio.png">
+<image src="LAB_6.drawio.png">
 ## Функция gets
 <image src="lab_6_func.drawio.png">	
 # Тесты
