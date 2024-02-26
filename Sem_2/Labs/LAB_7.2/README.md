@@ -29,7 +29,11 @@ int main()
 }
 ```
 # Блок-схема программы
-<image src="lab_4.drawio.png">
+## Функция main
+<image src="lab_7.2.drawio.png">
+	
+## Функция func
+<image src="lab_7.2_func.drawio.png">	
 	
 # Тесты
 ### Пример 
