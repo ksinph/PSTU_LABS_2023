@@ -93,9 +93,7 @@ int main()
     return 0;
 }
 ```
-# Блок-схема программы
-<image src="lab_ferz.drawio.png">
-	
+
 # Тесты
 ### Пример 1
 Выходные данные:
