@@ -1,6 +1,6 @@
 # Вариант задания
 Посчитать факториал.
-<image src="lab_sum_png.drawio.png">
+<image src="lab_sum_png.png">
 
 # Код программы
 ```cpp
