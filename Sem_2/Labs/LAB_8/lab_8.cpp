@@ -31,7 +31,7 @@ void write(abt user)
     fwrite(&user, sizeof(abt), 1, F);
 }
 
-void output(abt user) 
+void read(abt user) 
 {
     fread(&user, sizeof(abt), 1, F);
     printf("%s %d %f %f", user.name, user.year, user.exams, user.certificate);
