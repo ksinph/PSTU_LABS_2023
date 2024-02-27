@@ -24,7 +24,11 @@ int main()
 }
 ```
 # Блок-схема программы
+## Функция main
 <image src="lab_hanoi.drawio.png">
+
+## Функция hanoi
+<image src="lab_hanoi_void.drawio.png">
 	
 # Тесты
 ### Пример 1
