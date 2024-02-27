@@ -24,8 +24,12 @@ int main()
 }
 ```
 # Блок-схема программы
-<image src="lab_rec.png">
-	
+## Функция main
+<image src="lab_rec_main.png">
+
+## Функия fib
+<image src="lab_fib_fib.png">
+		
 # Тесты
 ### Пример 1
 Входные данные:
