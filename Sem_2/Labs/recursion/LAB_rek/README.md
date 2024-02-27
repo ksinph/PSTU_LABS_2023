@@ -25,10 +25,10 @@ int main()
 ```
 # Блок-схема программы
 ## Функция main
-<image src="lab_rec_main.png">
+<image src="lab_rec_main.drawio.png">
 
 ## Функия fib
-<image src="lab_fib_fib.png">
+<image src="lab_fib_fib.drawio.png">
 		
 # Тесты
 ### Пример 1
