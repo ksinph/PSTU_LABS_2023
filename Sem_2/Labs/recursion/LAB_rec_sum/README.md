@@ -26,7 +26,14 @@ int main()
 }
 ```
 # Блок-схема программы
+## Функция main
 <image src="lab_sum.drawio.png">
+
+## Функция factorial
+<image src="lab_sum_factorial.drawio.png">
+	
+## Функция fib
+<image src="lab_sum_fib.drawio.png">
 	
 # Тесты
 ### Пример 1
