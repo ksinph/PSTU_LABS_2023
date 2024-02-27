@@ -9,12 +9,12 @@ const int queen = -1;
 void resetboard();
 void showboard();
 bool checkqueen(int i);
-bool deletequeen(int i,int j);
+void deletequeen(int i, int j);
 void setqueen(int i, int j);
 
 void resetboard()
 {
-    for (int i = 0;i<8;i++)
+    for (int i = 0; i < 8; i++)
     {
         for (int j = 0; j < 8; j++)
         {
@@ -28,16 +28,16 @@ void showboard()
     {
         for (int j = 0; j < 8; j++)
         {
-            if (board[i][j] = queen) { cout << "[Q] "; }
+            if (board[i][j] == queen) { cout << "[Q] "; }
             else { cout << "[ ] "; }
         }
         cout << endl;
     }
 }
-void setqueen(int i,int j)
+void setqueen(int i, int j)
 {
     int d;
-    for (int x = 0;x<8;++x)
+    for (int x = 0; x < 8; ++x)
     {
         board[x][j]++;//указываем на клетку по вертикали атакует
         board[i][x]++;//по горизонтали
@@ -78,9 +78,8 @@ bool checkqueen(int i)
             {
                 deletequeen(i, j);
             }
-
         }
-        if (result) { break; }
+        if (result) { j=8; }
     }
     return result;
 }
@@ -99,24 +98,14 @@ int main()
 	
 # Тесты
 ### Пример 1
-Входные данные:
-```
-a
-s
-d
-f
-g
-h
-j
-k
-l
-z
-```
 Выходные данные:
 ```
-s
-f
-h
-k
-z
+[Q] [ ] [ ] [ ] [ ] [ ] [ ] [ ]
+[ ] [ ] [ ] [ ] [Q] [ ] [ ] [ ]
+[ ] [ ] [ ] [ ] [ ] [ ] [ ] [Q]
+[ ] [ ] [ ] [ ] [ ] [Q] [ ] [ ]
+[ ] [ ] [Q] [ ] [ ] [ ] [ ] [ ]
+[ ] [ ] [ ] [ ] [ ] [ ] [Q] [ ]
+[ ] [Q] [ ] [ ] [ ] [ ] [ ] [ ]
+[ ] [ ] [ ] [Q] [ ] [ ] [ ] [ ]
 ```
