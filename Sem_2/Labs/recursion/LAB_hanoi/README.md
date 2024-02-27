@@ -24,7 +24,7 @@ int main()
 }
 ```
 # Блок-схема программы
-<image src="lab_9.drawio.png">
+<image src="lab_hanoi.drawio.png">
 	
 # Тесты
 ### Пример 1
