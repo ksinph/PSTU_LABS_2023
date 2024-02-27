@@ -1,6 +1,7 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 #include <stdio.h>
+#include < cstdio >
 using namespace std;
 FILE* F;
 struct abt 
@@ -17,9 +18,9 @@ abt input_abt()
     abt obj;
     getline(cin, name);
     for (int i = 0; i < name.length(); i++)
-    {
-        obj.name[i] = name[i];
-    }
+        {
+            obj.name[i] = name[i];
+        }
     cin >> obj.year;
     cin >> obj.exams;
     cin >> obj.certificate;
@@ -45,18 +46,19 @@ int main()
     abt user;
     int f;
     f = fopen_s(&F,"file.bin", "wb, ccs=UNICODE");
-    if (f == NULL) 
+    if (f != NULL) 
     {
-        cout << "Не удалось открыть файл" << endl;
+        cout << "Файл открыт" << endl;
+        cout << "Введите ФИО,  год рождения, оценки за экзамены, средний балл за аттестат: " << endl;
+        abt user = input_abt();
+        write(user);
+        cout << "Вы ввели: " << endl;
+        read(user);
+        
     }
     else
     {
-        cout << "Файл открыт" << endl;
-        cout << "Введите ФИО, год рождения, оценки за экзамены, средний балл за аттестат:" << endl;
-        abt user = input_abt();
-        write(user);
-        cout << "Вы ввели:" << endl;
-        output(user);
+        cout << "Не удалось открыть файл" << endl;
     }
     fclose(F);
     return 0;
