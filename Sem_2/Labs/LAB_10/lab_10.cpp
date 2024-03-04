@@ -1,4 +1,4 @@
-﻿#include<iostream>
+#include<iostream>
 #include <ctime>
 using namespace std;
 int main()
@@ -18,14 +18,14 @@ int main()
 		cout << arr[i] << " ";
 	}
 	cout << endl;
-	int* mass = new int[n - k];
-	for (int i = 0; i < k; i++)
+	int* mass = new int[n - 1];
+	for (int i = 0; i < k-1; i++)
 	{
 		mass[i] = arr[i];
 	}
-	for (int i = k-1; i < n ; i++)
+	for (int i = k-1; i < n -1; i++)
 	{
-		mass[i] = arr[i + k-1];
+		mass[i] = arr[i + 1];
 	}
 	n--;
 	for (int i = 0; i < n; i++)
@@ -38,18 +38,22 @@ int main()
 	cin >> l;
 	cout << "Введите значение элемента: ";
 	cin >> s;
-	int*  itog= new int[n - k + 1];
-	for (int i = 0; i < l; i++)
+	n += 1;
+	int*  itog= new int[n];
+	
+	for (int i = 0; i < l - 1; i++)
 	{
 		itog[i] = mass[i];
 	}
-	itog[l] = s;
-	for (int i = l + 1; i < n - k + 1; i++)
+	for (int i = l - 1; i < n-1; i++)
 	{
 		itog[i+1] = mass[i];
+		
+		
 	}
+	itog[l - 1] = s;
 	delete[] mass;
-	for (int i = 0; i < n - k + 1; i++)
+	for (int i = 0; i < n; i++)
 	{
 		cout << itog[i] << " ";
 	}
