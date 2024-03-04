@@ -1,60 +1,67 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <string>
+#include <cstdio>
 #include <stdio.h>
-#include < cstdio >
+
 using namespace std;
 FILE* F;
-struct abt 
+struct abt
 {
     char name[100];
     int year;
-    float exams;
+    int exams;
     float certificate;
 };
 
-abt input_abt() 
+abt input_abt()
 {
     string name;
     abt obj;
     getline(cin, name);
-    for (int i = 0; i < name.length(); i++)
-        {
-            obj.name[i] = name[i];
-        }
+    cin>>obj.name;
     cin >> obj.year;
     cin >> obj.exams;
     cin >> obj.certificate;
     return obj;
 }
 
-void write(abt user) 
+void write(abt user)
 {
     fwrite(&user, sizeof(abt), 1, F);
+    scanf("%s", &user.name);
+    scanf("%d", &user.year);
+    scanf("%d", &user.exams);
+    scanf("%f", &user.certificate);
 }
 
-void read(abt user) 
+void read(abt user)
 {
     fread(&user, sizeof(abt), 1, F);
-    printf("%s %d %f %f", user.name, user.year, user.exams, user.certificate);
+    printf("%s", user.name);
+    printf("%d", user.year);
+    printf("%d", user.exams);
+    printf("%f", user.certificate);
     cout << endl;
 }
 
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    FILE* F;
     abt user;
-    int f;
-    f = fopen_s(&F,"file.bin", "wb, ccs=UNICODE");
-    if (f != NULL) 
+    int n;
+    cin >> n;
+    if ((F = fopen("file.dat", "wb")) != NULL)
     {
         cout << "Файл открыт" << endl;
-        cout << "Введите ФИО,  год рождения, оценки за экзамены, средний балл за аттестат: " << endl;
-        abt user = input_abt();
-        write(user);
-        cout << "Вы ввели: " << endl;
-        read(user);
-        
+        while (n > 0) {
+            cout << "Введите ФИО,  год рождения, оценки за экзамены, средний балл за аттестат: " << endl;
+            abt user = input_abt();
+            write(user);
+            cout << "Вы ввели: " << endl;
+            read(user);
+            n--;
+        }
     }
     else
     {
