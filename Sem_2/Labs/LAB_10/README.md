@@ -50,7 +50,7 @@ int main()
 	cout << "Введите значение элемента: ";
 	cin >> s;
 	n += 1;
-	for (int i = l - 1; i < n - 1; i++)
+	for (int i = n - 1; i < l - 1; i++)
 	{
 		arr[i] = arr[i-1];
 	}
