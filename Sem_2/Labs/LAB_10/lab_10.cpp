@@ -9,7 +9,7 @@ int main()
 	cout << "Колво элементов массива = ";
 	cin >> n;
 	int* arr = new int[n];
-	
+
 	cout << "k: ";
 	cin >> k;
 	for (int i = 0; i < n; i++)
@@ -18,45 +18,30 @@ int main()
 		cout << arr[i] << " ";
 	}
 	cout << endl;
-	int* mass = new int[n - 1];
-	for (int i = 0; i < k-1; i++)
+	for (int i = k - 1; i < n - 1; i++)
 	{
-		mass[i] = arr[i];
-	}
-	for (int i = k-1; i < n -1; i++)
-	{
-		mass[i] = arr[i + 1];
+		arr[i] = arr[i + 1];
 	}
 	n--;
 	for (int i = 0; i < n; i++)
 	{
-		cout << mass[i] << ' ';
+		cout << arr[i] << ' ';
 	}
-	delete[] arr;
 	cout << endl;
 	cout << "Введите номер, куда нужно вставить элемент: ";
 	cin >> l;
 	cout << "Введите значение элемента: ";
 	cin >> s;
 	n += 1;
-	int*  itog= new int[n];
-	
-	for (int i = 0; i < l - 1; i++)
+	for (int i = n-1; i >l-1; i--)
 	{
-		itog[i] = mass[i];
+		arr[i] = arr[i-1];
 	}
-	for (int i = l - 1; i < n-1; i++)
-	{
-		itog[i+1] = mass[i];
-		
-		
-	}
-	itog[l - 1] = s;
-	delete[] mass;
+	arr[l - 1] = s;
 	for (int i = 0; i < n; i++)
 	{
-		cout << itog[i] << " ";
+		cout << arr[i] << " ";
 	}
-	delete[] itog;
+	delete[] arr;
 	return 0;
 }
