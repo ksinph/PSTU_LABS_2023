@@ -61,7 +61,6 @@ public:
 };
 List::List()
 {
-
     Head = NULL;
     Count = 0;
 }
@@ -127,8 +126,6 @@ void List::PasteElement(int data, int position)
     left->Next = temp;
     temp->Next = right;
     Count++;
- 
-    
 }
 
 void List::DelElement(int position)
@@ -156,11 +153,11 @@ void List::DelElement(int position)
         temp = temp->Next;
         ind++;
     }
-    Element* temp2 = temp->Next;
-    Element* temp3 = temp2->Next;
+    Element* left = temp->Next;
+    Element* right = left->Next;
 
-    temp->Next = temp3;
-    delete temp2;
+    temp->Next = right;
+    delete left;
     Count--;
 }
 
@@ -203,7 +200,6 @@ void List::DelSpisok()
     }
 }
 
-// Тестовый пример 
 int main()
 {
     SetConsoleCP(1251);
@@ -236,6 +232,7 @@ int main()
     lst.Print();
     lst.Write();
     lst.DelSpisok();
+    cout << endl;
     lst.Print();
     lst.Read();
     cout << endl;
@@ -324,7 +321,7 @@ int main()
 
 Введите элемент:
 9
-1 2 9 3 4 5
+1 2 3 9 4 5
 
 Введите номер элемента для удаления:
 3
@@ -332,7 +329,7 @@ int main()
 Выходные данные:
 ```
 Список пустой
-1 2 3 4 5
+1 2 9 4 5
 ```
 ### Пример 3
 Входные данные:
@@ -359,7 +356,7 @@ int main()
 
 Введите елемент:
 9
-9 8 -3 5 1
+8 9 -3 5 1
 
 Введите номер элемента для удаления:
 0
@@ -368,5 +365,5 @@ int main()
 Выходные данные:
 ```
 Список пустой
-9 8 -3 5 1
+8 9 -3 5 1
 ```
