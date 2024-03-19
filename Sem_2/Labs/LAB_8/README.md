@@ -90,7 +90,6 @@ void deleter(int num)
 	}
 	fclose(f1);
 	fclose(f2);
-
 }
 void insert(string surnamep)
 {
@@ -114,19 +113,15 @@ void insert(string surnamep)
 		{
 			user.write();
 			fwrite(&user, sizeof(abt), 1, f2);
-
 		}
-
 	}
 	fclose(f1);
 	fclose(f2);
-
 }
 int main()
 {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
-	setlocale(LC_ALL, "Russian");
 	int n;
 	FILE* F;
 	abt user;
@@ -135,7 +130,6 @@ int main()
 	fwrite(&n, sizeof(int), 1, F);
 	for (int i = 0; i < n; i++)
 	{
-
 		user.write();
 		fwrite(&user, sizeof(abt), 1, F);
 	}
