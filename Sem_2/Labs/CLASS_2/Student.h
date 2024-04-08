@@ -1,31 +1,31 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <string>
 using namespace std;
 
 class Student
 {
-	//атрибуты 
+	//Р°С‚СЂРёР±СѓС‚С‹ 
 	string naime; 
 	string gruppa; 
 	float grades;
 public:
-	Student();//конструктор без параметров 
-	Student (string, string, float);//конструктор с параметрами 
-	Student (const Student&);//конструктор копирования 
-	~Student();//деструктор
+	Student();//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р±РµР· РїР°СЂР°РјРµС‚СЂРѕРІ 
+	Student (string, string, float);//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё 
+	Student (const Student&);//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїРёСЂРѕРІР°РЅРёСЏ 
+	~Student();//РґРµСЃС‚СЂСѓРєС‚РѕСЂ
 
-	string get_naime();//селектор
+	string get_naime();//СЃРµР»РµРєС‚РѕСЂ
 
-	void set_naime(string);//модификатор
+	void set_naime(string);//РјРѕРґРёС„РёРєР°С‚РѕСЂ
 
-	string get_gruppa();//селектор
+	string get_gruppa();//СЃРµР»РµРєС‚РѕСЂрџђ±вЂЌрџ‘“рџђ±вЂЌрџ‘“рџђ±вЂЌрџ‘“
 
-	void set_gruppa(string); //модификатор
+	void set_gruppa(string); //РјРѕРґРёС„РёРєР°С‚РѕСЂ
 
-	float get_grades();//селектор 
+	float get_grades();//СЃРµР»РµРєС‚РѕСЂ 
 
-	void set_grades (float); //модификатор
+	void set_grades (float); //РјРѕРґРёС„РёРєР°С‚РѕСЂ
 
-	void show();//просмотр атрибутов
+	void show();//РїСЂРѕСЃРјРѕС‚СЂ Р°С‚СЂРёР±СѓС‚РѕРІ
 
 };
