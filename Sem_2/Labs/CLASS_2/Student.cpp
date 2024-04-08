@@ -2,8 +2,8 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
-//конструктор без параметров
+setlocale(LC_ALL,"Russian");
+//ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° ГЎГҐГ§ ГЇГ Г°Г Г¬ГҐГІГ°Г®Гў
 Student::Student()
 {
 	naime = "";
@@ -12,7 +12,7 @@ Student::Student()
 	cout<<"Constructor bez parametrov dlia objecta "<<this<<endl;
 }
 
-//конструктор с параметрами
+//ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° Г± ГЇГ Г°Г Г¬ГҐГІГ°Г Г¬ГЁ
 Student::Student(string N, string K, float S)
 {
 	naime = N;
@@ -21,7 +21,7 @@ Student::Student(string N, string K, float S)
 	cout<<"Constructor s parametrami dlia objecta "<<this<<endl;
 }
 
-//конструктор копирования
+//ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° ГЄГ®ГЇГЁГ°Г®ГўГ Г­ГЁГї
 Student::Student(const Student& t)
 {
 	naime = t.naime;
@@ -30,13 +30,13 @@ Student::Student(const Student& t)
 	cout << "Constructor copirovania dlia objecta " << this << endl;
 }
 
-//деструктор
+//Г¤ГҐГ±ГІГ°ГіГЄГІГ®Г°
 Student::~Student()
 {
 	cout << "Destructor dlia objecta " << this << endl;
 }
 
-//селекторы
+//Г±ГҐГ«ГҐГЄГІГ®Г°Г»
 string Student::get_naime()
 {
 	return naime;
@@ -50,7 +50,7 @@ float Student::get_grades()
 	return grades;
 }
 
-//модификаторы
+//Г¬Г®Г¤ГЁГґГЁГЄГ ГІГ®Г°Г»
 void Student::set_naime(string N)
 {
 	naime = N;
@@ -64,7 +64,7 @@ void Student::set_grades(float S)
 	grades = S;
 }
 
-//метод для просмотра атрибутов
+//Г¬ГҐГІГ®Г¤ Г¤Г«Гї ГЇГ°Г®Г±Г¬Г®ГІГ°Г  Г ГІГ°ГЁГЎГіГІГ®Гў
 void Student::show()
 {
 	cout << "naime: " << naime << endl;
