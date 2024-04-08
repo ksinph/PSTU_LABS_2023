@@ -1,9 +1,9 @@
-#include "Student.h"
+п»ї#include "Student.h"
 #include <iostream>
 #include <string>
 using namespace std;
 
-//конструктор без параметров
+//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р±РµР· РїР°СЂР°РјРµС‚СЂРѕРІрџ‚
 Student::Student()
 {
 	naime = "";
@@ -12,7 +12,7 @@ Student::Student()
 	cout<<"Constructor bez parametrov dlia objecta "<<this<<endl;
 }
 
-//конструктор с параметрами
+//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё
 Student::Student(string N, string K, float S)
 {
 	naime = N;
@@ -21,7 +21,7 @@ Student::Student(string N, string K, float S)
 	cout<<"Constructor s parametrami dlia objecta "<<this<<endl;
 }
 
-//конструктор копирования
+//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїРёСЂРѕРІР°РЅРёСЏ
 Student::Student(const Student& t)
 {
 	naime = t.naime;
@@ -30,13 +30,13 @@ Student::Student(const Student& t)
 	cout << "Constructor copirovania dlia objecta " << this << endl;
 }
 
-//деструктор
+//РґРµСЃС‚СЂСѓРєС‚РѕСЂ
 Student::~Student()
 {
 	cout << "Destructor dlia objecta " << this << endl;
 }
 
-//селекторы
+//СЃРµР»РµРєС‚РѕСЂС‹
 string Student::get_naime()
 {
 	return naime;
@@ -50,7 +50,7 @@ float Student::get_grades()
 	return grades;
 }
 
-//модификаторы
+//РјРѕРґРёС„РёРєР°С‚РѕСЂС‹
 void Student::set_naime(string N)
 {
 	naime = N;
@@ -64,7 +64,7 @@ void Student::set_grades(float S)
 	grades = S;
 }
 
-//метод для просмотра атрибутов
+//РјРµС‚РѕРґ РґР»СЏ РїСЂРѕСЃРјРѕС‚СЂР° Р°С‚СЂРёР±СѓС‚РѕРІ
 void Student::show()
 {
 	cout << "naime: " << naime << endl;
