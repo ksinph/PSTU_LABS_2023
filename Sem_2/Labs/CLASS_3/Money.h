@@ -15,13 +15,13 @@ public:
 	void set_rub(long r) {rub = r;}
 	void set_kop(int k) { kop = k; }
 
-	//ïåðåãðóæåííûå îïåðàöèè
+	//Ã¯Ã¥Ã°Ã¥Ã£Ã°Ã³Ã¦Ã¥Ã­Ã­Ã»Ã¥ Ã®Ã¯Ã¥Ã°Ã Ã¶Ã¨Ã¨
 	Money& operator=(const Money&);
 	Money& operator++();
-	Money operator++(int);//ïîñòôèêñíàÿ îïåðàöèÿ
+	Money operator++(int);//Ã¯Ã®Ã±Ã²Ã´Ã¨ÃªÃ±Ã­Ã Ã¿ Ã®Ã¯Ã¥Ã°Ã Ã¶Ã¨Ã¿
 	Money operator+(const Money&);
 
-	//ãëîáàëüíûå ôóíêöèè ââîäà-âûâîäà
+	//Ã£Ã«Ã®Ã¡Ã Ã«Ã¼Ã­Ã»Ã¥ Ã´Ã³Ã­ÃªÃ¶Ã¨Ã¨ Ã¢Ã¢Ã®Ã¤Ã -Ã¢Ã»Ã¢Ã®Ã¤Ã 
 	friend istream& operator>>(istream& in, Money& t);
 	friend ostream& operator<<(ostream& out, const Money& t);
 };
