@@ -2,17 +2,17 @@
 #include <iostream>
 using namespace std;
 
-//перегрузка операции присваивания 
+//ГЇГҐГ°ГҐГЈГ°ГіГ§ГЄГ  Г®ГЇГҐГ°Г Г¶ГЁГЁ ГЇГ°ГЁГ±ГўГ ГЁГўГ Г­ГЁГї 
 Money&Money::operator=(const Money&t)
 {
-	//проверка на самоприсваивание 
+	//ГЇГ°Г®ГўГҐГ°ГЄГ  Г­Г  Г±Г Г¬Г®ГЇГ°ГЁГ±ГўГ ГЁГўГ Г­ГЁГҐ 
 	if(&t==this) return *this; 
 	rub=t.rub; 
 	kop=t.kop; 
 	return *this;
 }
 
-//перегрузка префиксной операции инкремент 
+//ГЇГҐГ°ГҐГЈГ°ГіГ§ГЄГ  ГЇГ°ГҐГґГЁГЄГ±Г­Г®Г© Г®ГЇГҐГ°Г Г¶ГЁГЁ ГЁГ­ГЄГ°ГҐГ¬ГҐГ­ГІ 
 Money& Money:: operator++()
 {
 	int temp = rub * 100 + kop;
@@ -22,7 +22,7 @@ Money& Money:: operator++()
 	return *this;
 }
 	
-//перегрузка постфиксной операции инкремент 
+//ГЇГҐГ°ГҐГЈГ°ГіГ§ГЄГ  ГЇГ®Г±ГІГґГЁГЄГ±Г­Г®Г© Г®ГЇГҐГ°Г Г¶ГЁГЁ ГЁГ­ГЄГ°ГҐГ¬ГҐГ­ГІ 
 Money Money:: operator ++ (int)
 {
 	int temp = rub * 100 + kop;
@@ -33,7 +33,7 @@ Money Money:: operator ++ (int)
 	return t;
 } 
 
-//перегрузка бинарной операции сложения
+//ГЇГҐГ°ГҐГЈГ°ГіГ§ГЄГ  ГЎГЁГ­Г Г°Г­Г®Г© Г®ГЇГҐГ°Г Г¶ГЁГЁ Г±Г«Г®Г¦ГҐГ­ГЁГї
 Money Money::operator+(const Money&t)
 {
 	int temp1 = rub * 100 + kop;
@@ -44,7 +44,7 @@ Money Money::operator+(const Money&t)
 	return p;
 }
 
-//перегрузка глобальной функции-операции ввода 
+//ГЇГҐГ°ГҐГЈГ°ГіГ§ГЄГ  ГЈГ«Г®ГЎГ Г«ГјГ­Г®Г© ГґГіГ­ГЄГ¶ГЁГЁ-Г®ГЇГҐГ°Г Г¶ГЁГЁ ГўГўГ®Г¤Г  
 istream&operator>>(istream&in, Money&t)
 {
 	cout<<"rub?"; in>>t.rub; 
@@ -52,7 +52,7 @@ istream&operator>>(istream&in, Money&t)
 	return in;
 }
 
-//перегрузка глобальной функции-операции вывода
+//ГЇГҐГ°ГҐГЈГ°ГіГ§ГЄГ  ГЈГ«Г®ГЎГ Г«ГјГ­Г®Г© ГґГіГ­ГЄГ¶ГЁГЁ-Г®ГЇГҐГ°Г Г¶ГЁГЁ ГўГ»ГўГ®Г¤Г 
 ostream&operator<<(ostream&out, const Money&t)
 {
 	return (out<<t.rub<<" , "<<t.kop);
