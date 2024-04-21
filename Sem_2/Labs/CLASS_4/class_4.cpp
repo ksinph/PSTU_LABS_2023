@@ -30,5 +30,4 @@ void main()
 	f1(c);
 	a = f2();
 	cout << a;
-	
 }
