@@ -5,22 +5,22 @@ class Time :
 {
 public:
 
-    Time(void); //конструктор без параметров
+    Time(void); //ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° ГЎГҐГ§ ГЇГ Г°Г Г¬ГҐГІГ°Г®Гў
 public:
-    ~Time(void); //деструктор
-    Time(int, int, int, int, int, int); //конструктор с параметрами
-    Time(const Time&);//конструктор копирования
-    int Get_hour() { return hour; }//модификатор
-    void Set_hour(int);//cелектор 
-    int Get_minute() { return minute; }//модификатор
-    void Set_minute(int);//cелектор 
-    int Get_seconds() { return seconds; }//модификатор
-    void Set_seconds(int);//cелектор 
-    Time& operator=(const Time&);//oперация присваивания
-    friend istream& operator>>(istream& in, Time& l);//операция ввода
-    friend ostream& operator<<(ostream& out, const Time& l); //oneрация вывода
+    ~Time(void); //Г¤ГҐГ±ГІГ°ГіГЄГІГ®Г°
+    Time(int, int, int, int, int, int); //ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° Г± ГЇГ Г°Г Г¬ГҐГІГ°Г Г¬ГЁ
+    Time(const Time&);//ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° ГЄГ®ГЇГЁГ°Г®ГўГ Г­ГЁГї
+    int Get_hour() { return hour; }//Г¬Г®Г¤ГЁГґГЁГЄГ ГІГ®Г°
+    void Set_hour(int);//cГҐГ«ГҐГЄГІГ®Г° 
+    int Get_minute() { return minute; }//Г¬Г®Г¤ГЁГґГЁГЄГ ГІГ®Г°
+    void Set_minute(int);//cГҐГ«ГҐГЄГІГ®Г° 
+    int Get_seconds() { return seconds; }//Г¬Г®Г¤ГЁГґГЁГЄГ ГІГ®Г°
+    void Set_seconds(int);//cГҐГ«ГҐГЄГІГ®Г° 
+    Time& operator=(const Time&);//oГЇГҐГ°Г Г¶ГЁГї ГЇГ°ГЁГ±ГўГ ГЁГўГ Г­ГЁГї
+    friend istream& operator>>(istream& in, Time& l);//Г®ГЇГҐГ°Г Г¶ГЁГї ГўГўГ®Г¤Г 
+    friend ostream& operator<<(ostream& out, const Time& l); //oneГ°Г Г¶ГЁГї ГўГ»ГўГ®Г¤Г 
 protected:
-    int hour;//aтрибут часы
-    int minute;//aтрибут минуты
-    int seconds;//aтрибут секунды
+    int hour;//aГІГ°ГЁГЎГіГІ Г·Г Г±Г»
+    int minute;//aГІГ°ГЁГЎГіГІ Г¬ГЁГ­ГіГІГ»
+    int seconds;//aГІГ°ГЁГЎГіГІ Г±ГҐГЄГіГ­Г¤Г»
 };
