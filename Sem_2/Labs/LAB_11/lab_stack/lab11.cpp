@@ -66,18 +66,6 @@ void List::Add(int pos, int data) {
             temp->prev = Tail;
             Tail = temp;
         }
-        
-        /*Element* prev = Tail;
-        Element* current = Tail->prev;
-        int cnt = 1;
-
-        while (cnt < Count-pos) {
-            prev = current;
-            current = current->prev;
-            cnt++;
-        }
-        Tail->prev = temp;
-        temp->prev = current;*/
     }
     Count++;
 }
@@ -138,18 +126,6 @@ void List::DelElement(int position)
         temp->prev = Tail;
         Tail = temp;
     }
-    
-    /*int ind = 0;
-    while (ind != Count-position-1)
-    {
-        temp = temp->prev;
-        ind++;
-    }
-    Element* right = temp->prev;
-    Element* left = right->prev;
-
-    temp->prev = left;
-    delete right;*/
     Count--;
 }
 
