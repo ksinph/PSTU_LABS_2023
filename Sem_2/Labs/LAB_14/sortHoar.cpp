@@ -1,6 +1,17 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string.h>
 using namespace std;
+const int kolvo = 25;
+
+void element(int arr[])
+{
+    for (int i = 0; i < kolvo; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
 
 int partition(int arr[], int low, int high)
 {
@@ -43,15 +54,11 @@ void quickSort(int arr[], int low, int high)
 }
 int main()
 {
-    int arr[] = { 1, 101, 78, 12, 55, 92, 0, 2, 4, 12, 7, 16, 34, 5, 6, 4, 23, 60, 28, 52, 11, 3, 43, 6, 2 };
-    //эти вычисления нужны для подсеты длины изменяющегося массива
-    int kolvo, bait;
-    kolvo = sizeof(arr);
-    bait = sizeof(int);
-    quickSort(arr, 0, kolvo / bait);
-    for (int i = 0; i <= kolvo / bait; i++)
-    {
-        cout << " " << arr[i];
-    }
+    int arr[kolvo];
+    for (int i = 0; i < kolvo; i++) arr[i] = rand() % 10;
+    element(arr);
+    cout << endl;
+    quickSort(arr, 0, kolvo);
+    element(arr);
     return 0;
 }
