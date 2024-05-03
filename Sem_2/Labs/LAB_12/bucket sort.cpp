@@ -80,10 +80,7 @@ void countSort(int arr[])
     // выполняем подсчет
     for (int i = 0; i < quantity; i++) count[arr[i]]++;
     // делаем вычисление префиксных сумм
-    for (int i = 1; i <= max; i++)
-    {
-        count[i] += count[i - 1];
-    }
+    for (int i = 1; i <= max; i++) count[i] += count[i - 1];
     // заполняем массив выходной
     for (int i = quantity - 1; i >= 0; i--)
     {
