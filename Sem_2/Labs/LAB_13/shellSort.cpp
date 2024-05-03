@@ -1,5 +1,15 @@
-﻿#include <iostream>
+#include <iostream>
 using namespace std;
+const int kolvo = 25;
+
+void element(int arr[])
+{
+    for (int i = 0; i < kolvo; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
 
 void shellSort(int arr[], int size)
 {
@@ -28,16 +38,11 @@ void shellSort(int arr[], int size)
 }
 int main()
 {
-    int arr[] = { 0, 101, 78, 12, 55, 92, 1, 2, 4, 12, 7, 16, 34, 5, 6, 4, 23, 60, 28, 52, 11, 3, 43, 6, 2 };
-    for (int i = 0; i < (sizeof(arr) / sizeof(int)); i++)
-    {
-        cout << arr[i] << " ";
-    }
+    int arr[kolvo];
+    for (int i = 0; i < kolvo; i++) arr[i] = rand() % 10;
+    element(arr);
     cout << endl;
-    shellSort(arr, (sizeof(arr) / sizeof(int)));
-    for (int i = 0; i < (sizeof(arr) / sizeof(int)); i++)
-    {
-        cout << arr[i] << " ";
-    }
+    shellSort(arr, kolvo);
+    element(arr);
     return 0;
 }
