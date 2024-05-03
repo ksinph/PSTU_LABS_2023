@@ -72,11 +72,11 @@ void countSort(int arr[])
     int max = arr[0];
     for (int i = 0; i < quantity; i++)
     {
-        if (arr[i] > max) { max = arr[i]; }
+        if (arr[i] > max) max = arr[i]; 
     }
 
     count = new int[max + 1];
-    for (int i = 0; i <= max; ++i) { count[i] = 0; }
+    for (int i = 0; i <= max; ++i) count[i] = 0; 
     // выполняем подсчет
     for (int i = 0; i < quantity; i++) count[arr[i]]++;
     // делаем вычисление префиксных сумм
@@ -104,24 +104,22 @@ void merge(int arr[], int start, int mid, int end)
     int* right = new int[n2];
 
     for (int i = 0; i < n1; i++)
+    {
         left[i] = arr[start + i];
+    }
     for (int j = 0; j < n2; j++)
+    {
         right[j] = arr[mid + 1 + j];
+    }
 
     int i = 0, j = 0, k = start;
     while (i < n1 && j < n2)
     {
-        if (left[i] <= right[j])
-            arr[k++] = left[i++];
-        else
-            arr[k++] = right[j++];
+        if (left[i] <= right[j]) arr[k++] = left[i++];
+        else arr[k++] = right[j++];
     }
-    while (i < n1)
-        arr[k++] = left[i++];
-
-    while (j < n2)
-        arr[k++] = right[j++];
-
+    while (i < n1) arr[k++] = left[i++];
+    while (j < n2) arr[k++] = right[j++];
     delete[] left;
     delete[] right;
 }
@@ -130,10 +128,8 @@ void mergeSort(int arr[], int start, int end)
     if (start < end)
     {
         int mid = start + (end - start) / 2;
-
         mergeSort(arr, start, mid);
         mergeSort(arr, mid + 1, end);
-
         merge(arr, start, mid, end);
     }
 }
