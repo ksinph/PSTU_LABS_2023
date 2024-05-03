@@ -1,7 +1,16 @@
-﻿#include <iostream>
+#include <iostream>
 using namespace std;
-
 const int cnt = 25;
+
+void element(int arr[])
+{
+    for (int i = 0; i < cnt; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
 void TrueMerge(int* arr, int right, int left)
 {
     int PackOne = 1;
@@ -125,11 +134,9 @@ void PhaseSort(int* arr, int right, int left)
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    int arr[] = { 1, 10, 12, 3, 40, 15, 68, 12, 22, 37, 105, 2, 7, 18, 4, 2, 91, 6, 13, 76, 4, 55, 8, 1, 17 };
-    for (int i = 0; i < cnt; i++)
-    {
-        cout << arr[i] << " ";
-    }
+    int arr[cnt];
+    for (int i = 0; i < cnt; i++) arr[i] = rand() % 10;
+    element(arr);
     cout << endl;
     cout << "1 - естественная сортировка \n2 - многофазная сортировка \nВведите цифру которая бдует соответствовать сортировке которую нужно применить: ";
     int n;
@@ -146,9 +153,6 @@ int main()
         cout << "Неправильный выбор";
     }
     cout << endl;
-    for (int i = 0; i < cnt; i++)
-    {
-        cout << arr[i] << " ";
-    }
+    element(arr);
     return 0;
 }
