@@ -286,7 +286,7 @@ int main()
 <image src="main.drawio.svg">
 
 ## Структура Element
-<image src="struct.drawio.svg">	
+<image src="struct.drawio.png">	
 
 ## Класс List
 <image src="class.drawio.svg">	
