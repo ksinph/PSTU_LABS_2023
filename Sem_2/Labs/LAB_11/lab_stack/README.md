@@ -260,7 +260,7 @@ int main()
 <image src="class.drawio.svg">	
 
 ## Конструктор List
-<image src="struct.drawio.svg">	
+<image src="constructor.drawio.svg">	
 
 ## Функция Add
 <image src="add.drawio.svg">	
