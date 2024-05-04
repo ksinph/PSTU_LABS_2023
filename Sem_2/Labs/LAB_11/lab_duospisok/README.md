@@ -286,13 +286,13 @@ int main()
 <image src="main.drawio.svg">
 
 ## Структура Element
-<image src="element.drawio.svg">	
+<image src="struct.drawio.svg">	
 
 ## Класс List
 <image src="class.drawio.svg">	
 
 ## Конструктор List
-<image src="struct.drawio.svg">	
+<image src="construct.drawio.svg">	
 
 ## Функция Add
 <image src="add.drawio.svg">	
