@@ -60,7 +60,7 @@ int main()
 <image src="element.drawio.svg">
 
 # Функция shellSort
-<image src="shellSort.drawio.png">
+<image src="shellSort.drawio.svg">
 	
 # Тесты
 ### Пример 1
