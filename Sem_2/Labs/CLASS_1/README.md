@@ -59,7 +59,7 @@ int main()
 
 ```
 # Блок-схема программы
-<image src="class1.xml">
+<image src="class1.png">
 	
 # Тесты
 ### Пример 1
