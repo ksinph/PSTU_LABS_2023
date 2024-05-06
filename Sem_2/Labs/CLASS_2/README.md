@@ -118,7 +118,7 @@ void main()
 }
 ```
 # Блок-схема программы
-<image src="class2.png">
+<image src="class2.drawio.svg">
 	
 # Тесты
 ### Пример 1
