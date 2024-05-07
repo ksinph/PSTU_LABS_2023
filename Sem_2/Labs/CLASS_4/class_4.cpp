@@ -5,17 +5,17 @@ using namespace std;
 
 void f1(Triad& c)
 {
-	c.Set_first(9);
+	c.Set_first(11);
 	cout << c;
-	c.Set_second(89);
+	c.Set_second(22);
 	cout << c;
-	c.Set_third(23);
+	c.Set_third(33);
 	cout << c;
 }
 
 Triad f2()
 {
-	Time l(2, 3, 7, 8, 45, 56);
+	Time l(00,00,00);
 	return l;
 }
 
