@@ -8,7 +8,7 @@ public:
     Time(void); //êîíñòðóêòîð áåç ïàðàìåòðîâ
 public:
     ~Time(void); //äåñòðóêòîð
-    Time(int, int, int, int, int, int); //êîíñòðóêòîð ñ ïàðàìåòðàìè
+    Time(int, int, int); //êîíñòðóêòîð ñ ïàðàìåòðàìè
     Time(const Time&);//êîíñòðóêòîð êîïèðîâàíèÿ
     int Get_hour() { return hour; }//ìîäèôèêàòîð
     void Set_hour(int);//cåëåêòîð 
