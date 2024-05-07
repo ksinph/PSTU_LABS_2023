@@ -1,6 +1,6 @@
 #include "Time.h"
 
-//конструктор без параметров
+//ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° ГЎГҐГ§ ГЇГ Г°Г Г¬ГҐГІГ°Г®Гў
 Time::Time(void) : Triad()
 {
 	hour = 0;
@@ -8,20 +8,20 @@ Time::Time(void) : Triad()
 	seconds = 0;
 }
 
-//дестрктор
+//Г¤ГҐГ±ГІГ°ГЄГІГ®Г°
 Time::~Time(void)
 {
 }
 
-//конструктор с параметрами
-Time::Time(int M, int C, int P, int G, int H, int S) :Triad(M, C, P)
+//ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° Г± ГЇГ Г°Г Г¬ГҐГІГ°Г Г¬ГЁ
+Time::Time(int G, int H, int S) :Triad(M, C, P)
 {
 	hour = G;
 	minute = H;
 	seconds = S;
 }
 
-//конструктор копирования
+//ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° ГЄГ®ГЇГЁГ°Г®ГўГ Г­ГЁГї
 Time::Time(const Time& L)
 {
 	first = L.first;
@@ -32,7 +32,7 @@ Time::Time(const Time& L)
 	seconds = L.seconds;
 }
 
-//модификатор
+//Г¬Г®Г¤ГЁГґГЁГЄГ ГІГ®Г°
 void Time::Set_hour(int G)
 {
 	hour = G;
@@ -46,7 +46,7 @@ void Time::Set_seconds(int S)
 	seconds = S;
 }
 
-//оперция присваивания
+//Г®ГЇГҐГ°Г¶ГЁГї ГЇГ°ГЁГ±ГўГ ГЁГўГ Г­ГЁГї
 Time& Time::operator= (const Time& l)
 {
 	if (&l == this) return *this;
@@ -59,7 +59,7 @@ Time& Time::operator= (const Time& l)
 	return *this;
 }
 
-//операция ввода
+//Г®ГЇГҐГ°Г Г¶ГЁГї ГўГўГ®Г¤Г 
 istream& operator>>(istream& in, Time& l)
 {
 	cout << "\nFirst:";
@@ -77,7 +77,7 @@ istream& operator>>(istream& in, Time& l)
 	return in;
 }
 
-//операция вывода
+//Г®ГЇГҐГ°Г Г¶ГЁГї ГўГ»ГўГ®Г¤Г 
 ostream& operator<<(ostream& out, const Time& l)
 {
 	out << "\nFIRST: " << l.first;
