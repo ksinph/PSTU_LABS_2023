@@ -33,13 +33,13 @@ ostream& operator<<(ostream& out, const Money& t)
 
 istream& operator>>(istream& in, Money& t)
 {
-	cout << "Ââåäèòå ðóáëè: "; in >> t.rubles;
-	cout << "Ââåäèòå êîïåéêè: "; in >> t.kop;
+	cout << "Введите рубли: "; in >> t.rubles;
+	cout << "Введите копейки: "; in >> t.kop;
 	return in;
 }
 
 void Money::operator!=(const Money& t)
 {
-	if (rubles == t.rubles && kop == t.kop) cout << "Ðàâíû" << endl;
-	else cout << "Íå ðàâíû" << endl;
+	if (rubles == t.rubles && kop == t.kop) cout << "Равны" << endl;
+	else cout << "Не равны" << endl;
 }
