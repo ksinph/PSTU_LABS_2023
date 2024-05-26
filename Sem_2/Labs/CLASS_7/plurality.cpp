@@ -42,6 +42,6 @@ T& Plurality<T>::operator[](int index) {
         return array[index];
     }
     else {
-        cout << "Îøèáêà" << endl;
+        cout << "ÃÃ¸Ã¨Ã¡ÃªÃ " << endl;
     }
 }
