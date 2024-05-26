@@ -310,7 +310,7 @@ int main()
 }
 ```
 # Блок-схема программы
-<image src="lab_10.drawio.png">
+<image src="hash.drawio.png">
 	
 # Тесты
 ### Пример 1
