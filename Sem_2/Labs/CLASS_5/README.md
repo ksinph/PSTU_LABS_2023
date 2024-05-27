@@ -421,4 +421,4 @@ int main()
 <image src="class5.drawio.svg">
 	
 # Тесты
-<image src="Screenshot_6.png">
+<image src="5.png">
