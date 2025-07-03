@@ -4,14 +4,38 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="qPDLs97VPNbufEtovyOr-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="n_OqSot9pXnqimnLtT7n-1" target="n_OqSot9pXnqimnLtT7n-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="n_OqSot9pXnqimnLtT7n-1" value="Рабочее место" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="354" y="20" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="qPDLs97VPNbufEtovyOr-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="n_OqSot9pXnqimnLtT7n-2" target="n_OqSot9pXnqimnLtT7n-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="n_OqSot9pXnqimnLtT7n-2" value="Базовые данные" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="20" y="90" width="120" height="60" as="geometry" />
+          <mxGeometry x="20" y="120" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="n_OqSot9pXnqimnLtT7n-3" value="Завод&lt;div&gt;Код РМ&lt;/div&gt;&lt;div&gt;Описание РМ&lt;/div&gt;&lt;div&gt;Вид РМ&lt;/div&gt;&lt;div&gt;Ответственный&lt;/div&gt;&lt;div&gt;Использование&lt;/div&gt;&lt;div&gt;Ключ значения&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;" parent="1" vertex="1">
-          <mxGeometry x="20" y="170" width="120" height="120" as="geometry" />
+          <mxGeometry x="20" y="220" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="qPDLs97VPNbufEtovyOr-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qPDLs97VPNbufEtovyOr-4" target="qPDLs97VPNbufEtovyOr-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qPDLs97VPNbufEtovyOr-4" value="Значения по умолчанию" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qPDLs97VPNbufEtovyOr-5" value="Ключ управления&lt;div&gt;ЕИ стандартных величин&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="160" y="220" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="qPDLs97VPNbufEtovyOr-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qPDLs97VPNbufEtovyOr-7" target="qPDLs97VPNbufEtovyOr-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qPDLs97VPNbufEtovyOr-7" value="Мощности" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qPDLs97VPNbufEtovyOr-8" value="Описание мощности&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="300" y="220" width="120" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
