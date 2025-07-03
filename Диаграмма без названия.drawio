@@ -1,14 +1,17 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0 (Edition Yx 05)" version="27.2.0">
   <diagram name="Страница — 1" id="paXVl5BUTNTQy-YcbPCh">
-    <mxGraphModel dx="854" dy="497" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="743" dy="432" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="qPDLs97VPNbufEtovyOr-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="n_OqSot9pXnqimnLtT7n-1" target="n_OqSot9pXnqimnLtT7n-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="qPDLs97VPNbufEtovyOr-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="n_OqSot9pXnqimnLtT7n-1" target="qPDLs97VPNbufEtovyOr-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="n_OqSot9pXnqimnLtT7n-1" value="Рабочее место" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="354" y="20" width="120" height="60" as="geometry" />
+          <mxGeometry x="300" y="10" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="qPDLs97VPNbufEtovyOr-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="n_OqSot9pXnqimnLtT7n-2" target="n_OqSot9pXnqimnLtT7n-3">
           <mxGeometry relative="1" as="geometry" />
@@ -34,8 +37,44 @@
         <mxCell id="qPDLs97VPNbufEtovyOr-7" value="Мощности" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="300" y="120" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="qPDLs97VPNbufEtovyOr-8" value="Описание мощности&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;" vertex="1" parent="1">
-          <mxGeometry x="300" y="220" width="120" height="120" as="geometry" />
+        <mxCell id="qPDLs97VPNbufEtovyOr-8" value="Вид мощности&lt;div&gt;Описание мощности&lt;div&gt;Ответственный&lt;/div&gt;&lt;div&gt;Начало и окончание смены&lt;/div&gt;&lt;div&gt;Перерыв&lt;/div&gt;&lt;div&gt;Перегрузка&lt;/div&gt;&lt;div&gt;Загрузка мощностей&lt;/div&gt;&lt;div&gt;Формула обработки&lt;/div&gt;&lt;div&gt;Распредление&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="300" y="220" width="120" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="qPDLs97VPNbufEtovyOr-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qPDLs97VPNbufEtovyOr-10" target="qPDLs97VPNbufEtovyOr-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qPDLs97VPNbufEtovyOr-10" value="Календарное планирование" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qPDLs97VPNbufEtovyOr-11" value="Вид мощности&lt;div&gt;Мощность&lt;/div&gt;&lt;div&gt;Формула&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="440" y="220" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="qPDLs97VPNbufEtovyOr-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qPDLs97VPNbufEtovyOr-13" target="qPDLs97VPNbufEtovyOr-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qPDLs97VPNbufEtovyOr-13" value="Калькуляция" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qPDLs97VPNbufEtovyOr-14" value="Дата начала и окончания&lt;div&gt;Завод&lt;/div&gt;&lt;div&gt;МВЗ&lt;/div&gt;&lt;div&gt;Вид параметров&lt;/div&gt;&lt;div&gt;Ключ параметров&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="590" y="220" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="qPDLs97VPNbufEtovyOr-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="qPDLs97VPNbufEtovyOr-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="90" as="sourcePoint" />
+            <mxPoint x="340" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qPDLs97VPNbufEtovyOr-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="359.69" y="90" as="sourcePoint" />
+            <mxPoint x="359.69" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qPDLs97VPNbufEtovyOr-18" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="499.69" y="90" as="sourcePoint" />
+            <mxPoint x="499.69" y="120" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
